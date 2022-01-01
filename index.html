@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Quiz-App</title>
+
+    <style>
+      form {
+        background-color: rgb(96, 68, 255);
+        padding: 20px;
+        text-align: justify;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+      }
+      
+      .result{
+          text-align: center;
+          color:rgb(96, 68, 255) ;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .title{
+        text-align: center;
+          color:rgb(96, 68, 255) ;
+
+      }
+      .button{
+          margin-left: 40%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="container py-3">
+        <p class="text-center title display-3" >Quiz App</p>
+      </div>
+      <div class="container">
+        <h3 class="result"></h3>
+      </div>
+    </div>
+
+    <div class="container py-3 primary">
+      <form>
+        <div class="py-2 m-3">
+          <h3>1.The wildebeest is also known by which name?</h3>
+          <input type="radio" name="Q1" id="Q1" value="A" />
+          <label for="Q1">A. GNU</label>
+          <input type="radio" name="Q1" id="Q1" value="B" />
+          <label for="Q1">B. Moose</label>
+        </div>
+        <div class="py-2 m-3">
+          <h3>2.Which word can go before end or after light?</h3>
+          <input type="radio" name="Q2" id="Q2" value="A" />
+          <label for="Q2">A. Year</label>
+          <input type="radio" name="Q2" id="Q2" value="B" />
+          <label for="Q2">B. Bulb</label>
+        </div>
+        <div class="py-2 m-3">
+          <h3>3.Which country's flag features a cactus?</h3>
+          <input type="radio" name="Q3" id="Q3" value="A" />
+          <label for="Q3">Mexico</label>
+          <input type="radio" name="Q3" id="Q3" value="B" />
+          <label for="Q3">France</label>
+        </div>
+        <div class="py-2 m-3">
+          <h3>4.What colour is the 'Black Box' found in commercial planes?</h3>
+          <input type="radio" name="Q4" id="Q4" value="A" />
+          <label for="Q4">Orange</label>
+          <input type="radio" name="Q4" id="Q4" value="B" />
+          <label for="Q4">Black</label>
+        </div>
+       <button  type="submit" class="btn btn-light button" >Submit</button>
+       
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
